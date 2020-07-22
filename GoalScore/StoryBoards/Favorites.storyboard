@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HUJ-dK-hVQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorites View Controller-->
+        <scene sceneID="bCV-3q-pCe">
+            <objects>
+                <viewController storyboardIdentifier="FavoritesViewController" id="QMg-1h-Ls5" customClass="FavoritesViewController" customModule="GoalScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eBj-VC-yJq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" restorationIdentifier="GSHeaderView" translatesAutoresizingMaskIntoConstraints="NO" id="Tug-kZ-Uvt" customClass="GSHeaderView" customModule="GoalScore" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="AWO-oO-oal"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aib-p1-nb3">
+                                <rect key="frame" x="145" y="432.5" width="124.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnJ-cA-k9a" userLabel="menuContainer">
+                                <rect key="frame" x="0.0" y="44" width="0.0" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjF-rV-sHI" userLabel="menuView">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="852"/>
+                                        <color key="backgroundColor" red="1" green="0.9512379004" blue="0.45539703440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" id="seK-5e-Kb1"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X93-T2-B9m" userLabel="hiddenView">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="852"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="X93-T2-B9m" firstAttribute="leading" secondItem="RjF-rV-sHI" secondAttribute="trailing" id="15L-Mn-521"/>
+                                    <constraint firstItem="X93-T2-B9m" firstAttribute="top" secondItem="nnJ-cA-k9a" secondAttribute="top" id="BBx-X6-BjO"/>
+                                    <constraint firstAttribute="bottom" secondItem="X93-T2-B9m" secondAttribute="bottom" id="FPS-I3-hPl"/>
+                                    <constraint firstAttribute="bottom" secondItem="RjF-rV-sHI" secondAttribute="bottom" id="We6-hE-h2J"/>
+                                    <constraint firstItem="RjF-rV-sHI" firstAttribute="top" secondItem="nnJ-cA-k9a" secondAttribute="top" id="Wsl-vh-xBi"/>
+                                    <constraint firstItem="RjF-rV-sHI" firstAttribute="leading" secondItem="nnJ-cA-k9a" secondAttribute="leading" id="fNE-6j-GLh"/>
+                                    <constraint firstAttribute="trailing" secondItem="X93-T2-B9m" secondAttribute="trailing" id="vQN-fg-Jcv"/>
+                                    <constraint firstAttribute="width" id="znd-oI-UhQ"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="dqy-ED-kt1"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Aib-p1-nb3" firstAttribute="centerY" secondItem="JxU-Wn-YgN" secondAttribute="centerY" id="13F-u8-W0f"/>
+                            <constraint firstItem="Tug-kZ-Uvt" firstAttribute="leading" secondItem="JxU-Wn-YgN" secondAttribute="leading" id="5Of-fF-UQy"/>
+                            <constraint firstItem="nnJ-cA-k9a" firstAttribute="bottom" secondItem="eBj-VC-yJq" secondAttribute="bottom" id="E4Y-Ez-9Gd"/>
+                            <constraint firstItem="JxU-Wn-YgN" firstAttribute="trailing" secondItem="Tug-kZ-Uvt" secondAttribute="trailing" id="QRy-S5-A9E"/>
+                            <constraint firstItem="Tug-kZ-Uvt" firstAttribute="top" secondItem="eBj-VC-yJq" secondAttribute="top" id="Sb6-q6-yze"/>
+                            <constraint firstItem="Aib-p1-nb3" firstAttribute="centerX" secondItem="JxU-Wn-YgN" secondAttribute="centerX" id="djP-eF-Mls"/>
+                            <constraint firstItem="nnJ-cA-k9a" firstAttribute="top" secondItem="Tug-kZ-Uvt" secondAttribute="bottom" id="jmD-4F-ztL"/>
+                            <constraint firstItem="nnJ-cA-k9a" firstAttribute="leading" secondItem="JxU-Wn-YgN" secondAttribute="leading" id="yBJ-eU-IDs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JxU-Wn-YgN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eMZ-Uh-c4C"/>
+                    <connections>
+                        <outlet property="headerView" destination="Tug-kZ-Uvt" id="SZC-8G-Cip"/>
+                        <outlet property="headerViewHeightConstraint" destination="AWO-oO-oal" id="cpt-w7-Eu9"/>
+                        <outlet property="hiddenMenu" destination="X93-T2-B9m" id="6Ld-yg-ewH"/>
+                        <outlet property="leadingC" destination="yBJ-eU-IDs" id="fO8-ya-GJy"/>
+                        <outlet property="menuView" destination="RjF-rV-sHI" id="iuJ-Dp-Aqg"/>
+                        <outlet property="menuViewWidthConstraint" destination="seK-5e-Kb1" id="aEW-W6-XwD"/>
+                        <outlet property="menuWidthConstraint" destination="znd-oI-UhQ" id="3hv-7f-Lvt"/>
+                        <outlet property="menucontainer" destination="nnJ-cA-k9a" id="1rw-V4-z9G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeZ-Ra-DRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710" y="57"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="oJe-EN-0Ai">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HUJ-dK-hVQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="ic_tab_favourites" id="kRZ-Xf-qNU"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TXP-J0-ODe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QMg-1h-Ls5" kind="relationship" relationship="rootViewController" id="6ag-O9-eVK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KiG-v0-vql" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="57"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_tab_favourites" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o7K-xS-x8u">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News View Controller-->
+        <scene sceneID="eDg-Ej-LKv">
+            <objects>
+                <viewController storyboardIdentifier="NewsViewController" id="UFa-CU-tDY" customClass="NewsViewController" customModule="GoalScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rDB-tc-nLg"/>
+                        <viewControllerLayoutGuide type="bottom" id="h6I-fC-9E9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pxt-Nh-9gN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" restorationIdentifier="GSHeaderView" translatesAutoresizingMaskIntoConstraints="NO" id="mCB-Ub-aTk" customClass="GSHeaderView" customModule="GoalScore" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gVn-a3-uIL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaT-Ne-Dkf">
+                                <rect key="frame" x="168.5" y="430" width="77" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LvU-FE-DzY" userLabel="menuContainer">
+                                <rect key="frame" x="0.0" y="44" width="0.0" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBI-3f-i6V" userLabel="menuView">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="818"/>
+                                        <color key="backgroundColor" red="1" green="0.9512379004" blue="0.45539703440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" id="WTa-Jz-lVD"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTb-bw-y9U" userLabel="hiddenView">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="818"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YBI-3f-i6V" firstAttribute="top" secondItem="LvU-FE-DzY" secondAttribute="top" id="5FE-E9-8Wi"/>
+                                    <constraint firstAttribute="trailing" secondItem="KTb-bw-y9U" secondAttribute="trailing" id="8xo-56-lhR"/>
+                                    <constraint firstAttribute="bottom" secondItem="KTb-bw-y9U" secondAttribute="bottom" id="CnB-0a-os0"/>
+                                    <constraint firstItem="KTb-bw-y9U" firstAttribute="leading" secondItem="YBI-3f-i6V" secondAttribute="trailing" id="L9L-TM-ia1"/>
+                                    <constraint firstAttribute="bottom" secondItem="YBI-3f-i6V" secondAttribute="bottom" id="moP-42-Rs5"/>
+                                    <constraint firstAttribute="width" id="sGg-9p-PbU"/>
+                                    <constraint firstItem="KTb-bw-y9U" firstAttribute="top" secondItem="LvU-FE-DzY" secondAttribute="top" id="sih-RD-ybf"/>
+                                    <constraint firstItem="YBI-3f-i6V" firstAttribute="leading" secondItem="LvU-FE-DzY" secondAttribute="leading" id="uRH-mq-GBH"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="2Ig-no-yK6"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LvU-FE-DzY" firstAttribute="top" secondItem="mCB-Ub-aTk" secondAttribute="bottom" id="640-8c-oED"/>
+                            <constraint firstAttribute="trailing" secondItem="mCB-Ub-aTk" secondAttribute="trailing" id="eLZ-aq-OK2"/>
+                            <constraint firstItem="h6I-fC-9E9" firstAttribute="top" secondItem="LvU-FE-DzY" secondAttribute="bottom" id="fpM-lO-EAF"/>
+                            <constraint firstItem="mCB-Ub-aTk" firstAttribute="top" secondItem="Pxt-Nh-9gN" secondAttribute="top" id="hNp-u4-V03"/>
+                            <constraint firstItem="qaT-Ne-Dkf" firstAttribute="centerX" secondItem="Pxt-Nh-9gN" secondAttribute="centerX" id="mc9-e1-ITQ"/>
+                            <constraint firstItem="LvU-FE-DzY" firstAttribute="leading" secondItem="Pxt-Nh-9gN" secondAttribute="leading" id="qSZ-NF-Yce"/>
+                            <constraint firstItem="qaT-Ne-Dkf" firstAttribute="centerY" secondItem="Pxt-Nh-9gN" secondAttribute="centerY" id="qop-bW-vCB"/>
+                            <constraint firstItem="mCB-Ub-aTk" firstAttribute="leading" secondItem="Pxt-Nh-9gN" secondAttribute="leading" id="xUO-2Z-mxX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mcz-aO-p4v"/>
+                    <connections>
+                        <outlet property="headerView" destination="mCB-Ub-aTk" id="TIU-pM-S3d"/>
+                        <outlet property="headerViewHeightConstraint" destination="gVn-a3-uIL" id="1uC-fH-ZG9"/>
+                        <outlet property="hiddenMenu" destination="KTb-bw-y9U" id="PMI-xe-YoO"/>
+                        <outlet property="leadingC" destination="qSZ-NF-Yce" id="r7L-WJ-3m2"/>
+                        <outlet property="menuView" destination="YBI-3f-i6V" id="eZn-EU-hvI"/>
+                        <outlet property="menuViewWidthConstraint" destination="WTa-Jz-lVD" id="qnk-fl-iaE"/>
+                        <outlet property="menuWidthConstraint" destination="sGg-9p-PbU" id="Tye-5H-MoI"/>
+                        <outlet property="menucontainer" destination="LvU-FE-DzY" id="7XI-Op-edI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Au3-gC-Lkx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143.47826086956522" y="-128.57142857142856"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="xFR-sY-iyr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o7K-xS-x8u" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="ic_tab_news" id="IKg-PW-kfd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ssT-fK-TNa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UFa-CU-tDY" kind="relationship" relationship="rootViewController" id="yQq-x2-aNz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FVP-QS-U71" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1053.6231884057972" y="-128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_tab_news" width="25" height="25"/>
+    </resources>
+</document>

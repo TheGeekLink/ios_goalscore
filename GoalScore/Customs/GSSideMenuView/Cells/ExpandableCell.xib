@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpandableCell" rowHeight="66" id="X13-W3-mzV" customClass="ExpandableCell2" customModule="ExpandaleTableViewTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X13-W3-mzV" id="0E9-wZ-z0c">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lbm-Er-mgT" userLabel="containerView">
+                        <rect key="frame" x="16" y="23" width="20" height="20"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NBG-Ie-mr7">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NBG-Ie-mr7" secondAttribute="bottom" id="30w-x5-neu"/>
+                            <constraint firstAttribute="trailing" secondItem="NBG-Ie-mr7" secondAttribute="trailing" id="BnA-6y-H82"/>
+                            <constraint firstAttribute="width" constant="20" id="GtP-hJ-Oz1"/>
+                            <constraint firstItem="NBG-Ie-mr7" firstAttribute="top" secondItem="Lbm-Er-mgT" secondAttribute="top" id="brB-yY-mAH"/>
+                            <constraint firstItem="NBG-Ie-mr7" firstAttribute="leading" secondItem="Lbm-Er-mgT" secondAttribute="leading" id="kbL-Rx-Z7b"/>
+                            <constraint firstAttribute="height" constant="20" id="mPM-nP-cTY"/>
+                            <constraint firstItem="NBG-Ie-mr7" firstAttribute="centerY" secondItem="Lbm-Er-mgT" secondAttribute="centerY" id="t5f-vJ-hs3"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expandable Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6x-gc-5Zj">
+                        <rect key="frame" x="50" y="22.5" width="122.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="Mpa-Ob-xq0" userLabel="arrowImage">
+                        <rect key="frame" x="320" y="27" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="5IC-IV-3KL"/>
+                            <constraint firstAttribute="width" constant="12" id="8sG-3M-JJx"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Mpa-Ob-xq0" secondAttribute="trailing" constant="43" id="2N1-os-Xr2"/>
+                    <constraint firstItem="Lbm-Er-mgT" firstAttribute="centerY" secondItem="0E9-wZ-z0c" secondAttribute="centerY" id="6g5-8G-B5N"/>
+                    <constraint firstItem="Mpa-Ob-xq0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Y6x-gc-5Zj" secondAttribute="trailing" id="BIV-83-psH"/>
+                    <constraint firstItem="Y6x-gc-5Zj" firstAttribute="centerY" secondItem="0E9-wZ-z0c" secondAttribute="centerY" id="GJs-st-69M"/>
+                    <constraint firstItem="Lbm-Er-mgT" firstAttribute="leading" secondItem="0E9-wZ-z0c" secondAttribute="leading" constant="16" id="dmD-cE-vmh"/>
+                    <constraint firstItem="Mpa-Ob-xq0" firstAttribute="centerY" secondItem="0E9-wZ-z0c" secondAttribute="centerY" id="jBk-3C-9yD"/>
+                    <constraint firstItem="Y6x-gc-5Zj" firstAttribute="leading" secondItem="Lbm-Er-mgT" secondAttribute="trailing" constant="14" id="oE5-S2-IgB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="arrowImg" destination="Mpa-Ob-xq0" id="SYk-ZH-lQg"/>
+                <outlet property="containerView" destination="Lbm-Er-mgT" id="5dy-YR-jyQ"/>
+                <outlet property="expandableCellTitle" destination="Y6x-gc-5Zj" id="kYv-WF-aqv"/>
+                <outlet property="imgView" destination="NBG-Ie-mr7" id="Vwa-lV-308"/>
+            </connections>
+            <point key="canvasLocation" x="58.5" y="-10"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_dropdown" width="9" height="5.3333334922790527"/>
+    </resources>
+</document>

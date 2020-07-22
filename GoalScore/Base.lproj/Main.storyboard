@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewController" id="49e-Tb-3d3" customClass="TabBarViewController" customModule="GoalScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lxO-dL-GXf" kind="relationship" relationship="viewControllers" id="44O-9M-7YL"/>
+                        <segue destination="Swj-va-ikQ" kind="relationship" relationship="viewControllers" id="jU7-bC-c9E"/>
+                        <segue destination="pgF-gW-Sbd" kind="relationship" relationship="viewControllers" id="OD0-AX-Ic4"/>
+                        <segue destination="zSv-iP-zOL" kind="relationship" relationship="viewControllers" id="bOa-gV-Sqx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-330" y="-142"/>
+        </scene>
+        <!--Matches-->
+        <scene sceneID="7mP-jn-F9k">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Matches" id="lxO-dL-GXf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Matches" image="ic_tab_match" id="afS-Hx-YcB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jmy-4y-Wq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="340"/>
+        </scene>
+        <!--Leagues-->
+        <scene sceneID="zlc-zI-ypn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Leagues" id="Swj-va-ikQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Leagues" image="ic_tab_league" id="pNR-7r-yih"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WMf-FB-6nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-417" y="340"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="wFz-DK-rVt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favorites" id="pgF-gW-Sbd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="ic_tab_favourites" id="a1F-Wu-9Fb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lad-J9-YHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-181" y="340"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="Fnt-uE-vP9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="News" id="zSv-iP-zOL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="ic_tab_news" id="wcu-Rf-lV7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AJR-ke-9vY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="340"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_tab_favourites" width="25" height="25"/>
+        <image name="ic_tab_league" width="25" height="25"/>
+        <image name="ic_tab_match" width="25" height="25"/>
+        <image name="ic_tab_news" width="25" height="25"/>
+    </resources>
+</document>

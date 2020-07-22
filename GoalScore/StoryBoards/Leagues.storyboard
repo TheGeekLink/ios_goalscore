@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MlP-Do-Igc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leagues View Controller-->
+        <scene sceneID="jcT-xY-VGx">
+            <objects>
+                <viewController storyboardIdentifier="LeaguesViewController" id="Dzy-Hq-v6n" customClass="LeaguesViewController" customModule="GoalScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UpG-9z-mIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" restorationIdentifier="GSHeaderView" translatesAutoresizingMaskIntoConstraints="NO" id="pxa-55-BUP" customClass="GSHeaderView" customModule="GoalScore" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ujj-q4-cXu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leagues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m7-X8-YgP">
+                                <rect key="frame" x="149" y="432.5" width="116" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3DZ-uz-PNg" userLabel="menuContainer">
+                                <rect key="frame" x="0.0" y="44" width="0.0" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lq2-ou-ot4" userLabel="menuView">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="852"/>
+                                        <color key="backgroundColor" red="1" green="0.9512379004" blue="0.45539703440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" id="GV6-uM-xMe"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQk-od-n1N" userLabel="hiddenView">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="852"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lq2-ou-ot4" firstAttribute="top" secondItem="3DZ-uz-PNg" secondAttribute="top" id="1OD-wP-2YZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="sQk-od-n1N" secondAttribute="trailing" id="FQH-95-THf"/>
+                                    <constraint firstAttribute="bottom" secondItem="sQk-od-n1N" secondAttribute="bottom" id="FVg-SK-sa6"/>
+                                    <constraint firstItem="sQk-od-n1N" firstAttribute="leading" secondItem="lq2-ou-ot4" secondAttribute="trailing" id="HiS-B7-jhE"/>
+                                    <constraint firstItem="lq2-ou-ot4" firstAttribute="leading" secondItem="3DZ-uz-PNg" secondAttribute="leading" id="TpL-DW-Igh"/>
+                                    <constraint firstAttribute="width" id="Yrp-Kp-Tmw"/>
+                                    <constraint firstAttribute="bottom" secondItem="lq2-ou-ot4" secondAttribute="bottom" id="dVP-36-ut0"/>
+                                    <constraint firstItem="sQk-od-n1N" firstAttribute="top" secondItem="3DZ-uz-PNg" secondAttribute="top" id="xeb-F0-kIA"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="z0n-Xy-AOY"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3DZ-uz-PNg" firstAttribute="bottom" secondItem="UpG-9z-mIQ" secondAttribute="bottom" id="4vd-nQ-sPm"/>
+                            <constraint firstItem="3m7-X8-YgP" firstAttribute="centerX" secondItem="as6-hG-b3h" secondAttribute="centerX" id="Dec-1f-rxa"/>
+                            <constraint firstItem="3m7-X8-YgP" firstAttribute="centerY" secondItem="as6-hG-b3h" secondAttribute="centerY" id="NuE-PE-8Nc"/>
+                            <constraint firstItem="as6-hG-b3h" firstAttribute="trailing" secondItem="pxa-55-BUP" secondAttribute="trailing" id="OOq-F9-9t8"/>
+                            <constraint firstItem="pxa-55-BUP" firstAttribute="leading" secondItem="as6-hG-b3h" secondAttribute="leading" id="PSq-tu-qKc"/>
+                            <constraint firstItem="3DZ-uz-PNg" firstAttribute="leading" secondItem="as6-hG-b3h" secondAttribute="leading" id="V6p-xd-wsC"/>
+                            <constraint firstItem="pxa-55-BUP" firstAttribute="top" secondItem="UpG-9z-mIQ" secondAttribute="top" id="kPJ-ex-Ve7"/>
+                            <constraint firstItem="3DZ-uz-PNg" firstAttribute="top" secondItem="pxa-55-BUP" secondAttribute="bottom" id="t8f-fe-ReD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="as6-hG-b3h"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dfl-qb-QUx"/>
+                    <connections>
+                        <outlet property="headerView" destination="pxa-55-BUP" id="wYT-C2-iBw"/>
+                        <outlet property="headerViewHeightConstraint" destination="ujj-q4-cXu" id="Afb-9V-F0i"/>
+                        <outlet property="hiddenMenu" destination="sQk-od-n1N" id="eVq-ja-Ivw"/>
+                        <outlet property="leadingC" destination="V6p-xd-wsC" id="uT9-FO-s74"/>
+                        <outlet property="menuView" destination="lq2-ou-ot4" id="S2Y-KM-RKP"/>
+                        <outlet property="menuViewWidthConstraint" destination="GV6-uM-xMe" id="qew-Ri-lK0"/>
+                        <outlet property="menuWidthConstraint" destination="Yrp-Kp-Tmw" id="owx-5E-gM1"/>
+                        <outlet property="menucontainer" destination="3DZ-uz-PNg" id="o2d-46-J0e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVS-9z-s6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199.2" y="66.11694152923539"/>
+        </scene>
+        <!--Leagues-->
+        <scene sceneID="KqR-Ih-QRn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MlP-Do-Igc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Leagues" image="ic_tab_league" id="lip-cH-oq6"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9vM-Sa-Ar4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dzy-Hq-v6n" kind="relationship" relationship="rootViewController" id="OTm-yG-sbJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rc8-bR-zwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="66.11694152923539"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_tab_league" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'GoalScore' do
+#  pod 'ImageSlideshow', '~> 1.6'
+
+end
+
+target 'GoalScoreTests' do
+end
